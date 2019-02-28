@@ -1,0 +1,140 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Test page 2</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="Microsoft Theme" content="blank 000, default">
+<meta name="Microsoft Border" content="tlb, default">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#999999" vlink="#990000" alink="#666666"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td><!--mstheme--><font face="Arial, Arial, Helvetica"><p>
+
+</p>
+<p align="center"><font size="5"></font>
+<br>
+<font size="2">
+</font>
+</p>
+
+
+<p>
+</p>
+
+<!--mstheme--></font></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="1%"><!--mstheme--><font face="Arial, Arial, Helvetica">
+
+
+<p><img src="images/undercon.gif" 
+alt="[Under Construction]" border="0" width="40" height="38"></p>
+
+
+<p>
+&nbsp;
+</p>
+
+<!--mstheme--></font></td><td valign="top" width="24"></td><!--msnavigation--><td valign="top"><!--mstheme--><font face="Arial, Arial, Helvetica">
+<p>&nbsp;</p>
+<!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  if (theForm.Bus_Number.value == "")
+  {
+    alert("Please enter a value for the \"Bus Number\" field.");
+    theForm.Bus_Number.focus();
+    return (false);
+  }
+
+  if (theForm.Bus_Number.value.length < 4)
+  {
+    alert("Please enter at least 4 characters in the \"Bus Number\" field.");
+    theForm.Bus_Number.focus();
+    return (false);
+  }
+
+  if (theForm.Bus_Number.value.length > 4)
+  {
+    alert("Please enter at most 4 characters in the \"Bus Number\" field.");
+    theForm.Bus_Number.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-";
+  var checkStr = theForm.Bus_Number.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Bus Number\" field.");
+    theForm.Bus_Number.focus();
+    return (false);
+  }
+
+  var chkVal = allNum;
+  var prsVal = parseInt(allNum);
+  if (chkVal != "" && !(prsVal >= "2000" && prsVal < "9999"))
+  {
+    alert("Please enter a value greater than or equal to \"2000\" and less than \"9999\" in the \"Bus Number\" field.");
+    theForm.Bus_Number.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan --><form method="POST" action="_derived/nortbots.htm" onsubmit="location.href='_derived/nortbots.htm';return false;" name="FrontPage_Form1" webbot-action="--WEBBOT-SELF--" WEBBOT-onSubmit="return FrontPage_Form1_Validator(this)">
+  <!--webbot bot="SaveResults" U-File="_private/form_results.txt"
+  S-Format="TEXT/CSV" S-Label-Fields="TRUE" startspan --><input TYPE="hidden" NAME="VTI-GROUP" VALUE="0"><!--webbot bot="SaveResults" endspan i-checksum="43374" -->
+  <p><!--webbot bot="Validation" S-Display-Name="Bus Number"
+  S-Data-Type="Integer" S-Number-Separators="x" B-Value-Required="TRUE"
+  I-Minimum-Length="4" I-Maximum-Length="4"
+  S-Validation-Constraint="Greater than or equal to" S-Validation-Value="2000"
+  S-Validation-Constraint="Less than" S-Validation-Value="9999" --><input type="text" name="Bus_Number" size="8" maxlength="4"><br>
+  <select size="1" name="Bus_Zone">
+    <option value="Engine">Engine</option>
+    <option value="Exterior Lights">Exterior Lights</option>
+    <option value="Doors">Doors</option>
+    <option value="Fare Box">Fare Box</option>
+    <option value="Heating">Heating</option>
+    <option value="Interior Lights">Interior Lights</option>
+    <option value="PLC">PLC</option>
+    <option value="Radio">Radio</option>
+    <option value="Transmision">Transmision</option>
+  </select><br>
+  <input type="submit" value="Submit" name="B1"><input type="reset" value="Reset" name="B2"></p>
+</form>
+&nbsp;<!--mstheme--></font><!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td><!--mstheme--><font face="Arial, Arial, Helvetica">
+
+<p>&nbsp;</p>
+
+
+
+<h5>
+
+Send mail to <a href="mailto:cmurgu@telus.net">cmurgu@hotmail.com</a> with
+questions or comments about this web site.<br>
+
+
+Copyright © 2007 FOH Electric Department<br>
+
+
+Last modified: aprilie 01, 2007
+
+</h5>
+
+<!--mstheme--></font></td></tr><!--msnavigation--></table></body>
+
+</html>
